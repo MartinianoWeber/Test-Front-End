@@ -1,0 +1,98 @@
+
+  .main__newsletter{
+    margin-top:20rem;
+  }
+
+  .newsletter__container{
+    display: flex;
+    flex-direction: column;
+    background-color: $blancoNov;
+    h2{
+      font-size: 3rem;
+      text-align: center;
+      color: $grisTitle;
+      margin-bottom: 0rem;
+    }
+    .newsletter__form {
+        margin-bottom: 4rem;
+    }
+    .newsletter__form form{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        justify-content: center;
+        input{
+            width: 20%;
+            height: 30px;
+            border-radius: .6rem;
+            border:none;
+            outline: none;
+            color: $negro;
+            padding: 2rem;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            &::placeholder{
+                color: $negro;
+            }
+        }
+        button{
+            background-color: $negro;
+            color: $blanco;
+            border: none;
+            padding: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+  }
+
+  .error{
+    background-color: $negro;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 200px;
+    text-align:center;
+    margin: auto;
+    margin-top: 1rem;
+
+  }
+
+  .ok{
+    background-color: green;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 200px;
+    text-align:center;
+    margin: auto;
+    margin-top: 1rem;
+
+  }
+ 
+  @media (min-width: 280px ) and (max-width:  600px){
+    .newsletter__container .newsletter__form form {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .newsletter__container .newsletter__form form input {
+        width: 100%;
+       margin: auto;
+       margin-bottom: 1rem;
+    }
+    .newsletter__container h2{
+      text-align: justify;
+      font-size: 2.5rem;
+      width: 80%;
+      margin: auto;
+  
+    }
+    .newsletter__container .newsletter__form form button {
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 0.7rem;
+    }
+  }

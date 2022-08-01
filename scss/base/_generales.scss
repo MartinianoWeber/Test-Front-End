@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Generales */
+    
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $font-nunito;
+    color: $negro;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+  }
+  
+ul{
+    padding:0;
+}
+
+
+/** Utilidades **/
+
+    .d-flex{
+        display: flex;
+    }
+.spaceAround{
+    justify-content: space-around;
+}
+    .no-margin {
+        margin: 0;
+    }
+    
+    .no-padding {
+        padding: 0;
+    }
+    
+    .centrar-texto {
+        text-align: center;
+    }

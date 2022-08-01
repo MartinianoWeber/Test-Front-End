@@ -1,0 +1,213 @@
+.main__productos{
+    width: 95%;
+    margin: 0 auto;
+    .productos__title{
+        h2{
+            font-size: 3rem;
+        }
+        div{
+            margin-top: -2rem;
+            background-color: $grisLine;
+            width: 100px;
+            height: 10px;
+        }
+    }
+
+}
+
+.productos__card{
+    background-color: $blanco;
+    transition: 1s;
+    width: 216px;
+    height: 353px;
+        .card__img{
+            background-image: url(../img/muestra.png);
+            width: 100%;
+            background-position: center;
+            height: 180px;
+            .card__off{
+                    margin-left: auto;
+                    width: 100px;
+                    height: 100px;
+                    border-right: 50px solid transparent;
+                    border-top: 50px solid transparent;
+                    border-left: 50px solid $rosadoOff;
+                    border-bottom: 50px solid $rosadoOff;
+                    transform: rotate(180deg);
+                    h4{
+                        transform: rotate(180deg);
+                        font-size: 2rem;
+                        color: $blanco;
+                        margin-top: .5rem;
+                    }
+            }
+        }
+
+    
+}
+
+
+
+.card__name{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $letrasCard;
+}
+
+.card__stars{
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+    svg{
+        color: $rosadoOff;
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.card__textos{
+   text-align: center;
+    p{
+        font-size: 1.3rem;
+        color: $letrasCard;
+        margin-bottom: -1.5rem;
+        margin-top: 0;
+    }
+    p:last-child{
+        margin-bottom: 0rem;
+        margin-top: -1.4rem;
+    }
+    h3{
+        font-size: 1.9rem;
+    }
+}
+
+.card__btn{
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    width: 140px;
+    margin: auto;
+    button{
+        margin: auto;
+        position: absolute;
+        background-color: $negro;
+        color: $blanco;
+        width: 130px;
+        padding: 0.8rem;
+        font-size: 1.8rem;
+        border-radius:.6rem;
+        transform: translate(0px, -50px);
+        z-index: 9;
+        transition: 1s;
+        cursor: pointer;
+    }
+}
+
+
+.productos__card:hover .card__btn button {
+    transform: translate(0px, 0px);
+    transition: 1s;
+} 
+.productos__card:hover{
+    background-color: $grisCard;
+    transition: 1s;
+}
+
+.barra__cambio{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20rem;
+    align-items: center;
+}
+
+.btnSig {
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.btnSig1{
+ img{
+    transform: rotate(90deg);
+ }
+}
+.btnSig2{
+    img{
+       transform: rotate(-90deg);
+    }
+   }
+
+
+   /* cARRITO */
+.submenu {
+    position: relative;
+    list-style: none;
+  }
+  
+  .submenu .carrito {
+    display: none;
+  }
+  
+  .submenu:hover .carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+  
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+  }
+  
+  .carrito__color{
+    color: black;
+  }
+  
+  .btnVaciar{
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: .5rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .imgCarrito{
+    width: 150px;
+  }
+  
+  .tablaContainer{
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  
+  .img__carrito{
+    width: 50px;
+    height: 50px;
+  }
+  
+  #containerCarrito{
+    text-align: center;
+  }
+
+  .btnEliminar{
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+
+  @media (min-width: 280px ) and (max-width:  600px){
+    .card__btn button {
+        transform: translate(0px, 0px);
+        transition: 1s;
+    } 
+      .productos__card:hover{
+        background-color: rgb(255, 255, 255);
+    }
+  }
